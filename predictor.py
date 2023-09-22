@@ -12,6 +12,8 @@ filename = 'logistic_regression.sav'
 
 loaded_model = pickle.load(open(filename, 'rb'))
 
-res = loaded_model.predict(["POPE FRANCIS IS GAY"])
+text = 'some text to predict'
+
+res = loaded_model.predict([text])
 
 print(res)
