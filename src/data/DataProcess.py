@@ -6,12 +6,8 @@ import string
 
 from sklearn.model_selection import train_test_split
 
-
-
 class DataPreparator():
-
     nltk.download('stopwords')
-
 
     @staticmethod
     def join(true, fake):

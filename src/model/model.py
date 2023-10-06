@@ -3,13 +3,11 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
-
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 
 import pickle
-
 
 class Training:
     def __init__(self, model_name) -> None:
@@ -68,7 +66,3 @@ class Prediction(Testing):
 
 def save(model, file_name):
     pickle.dump(model, open(file_name, 'wb'))
-
-
-
-
